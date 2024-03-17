@@ -1,0 +1,53 @@
+@using LibraryDataAccess.Entities
+@model NewBookModel
+
+@{
+    ViewBag.Title = "Create new book";
+    Layout = "_Layout";
+}
+
+<h2>New Book</h2>
+
+@if (ViewBag.Error is not null)
+{
+    <span style="color:red;">@ViewBag.Error</span>
+}
+@using (Html.BeginForm("Create", "Book", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <th colspan="2">New book</th>
+        </tr>
+        <tr>
+            <td>Release date: </td>
+            <td>
+                @Html.TextBoxFor(m => m.ReleaseDate)
+            </td>
+        </tr>
+        <tr>
+            <td>Name: </td>
+            <td>
+                @Html.TextBoxFor(m => m.Name)
+            </td>
+        </tr>
+        <tr>
+            <td>Author: </td>
+            <td>
+                @Html.DropDownListFor(m => m.AuthorId, ((Author[])ViewBag.Authors).Select(a => new SelectListItem()
+                {
+                    Text = a.Name,
+                    Value = a.Id.ToString(),
+                }), "Please select")
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Submit"/>
+            </td>
+        </tr>
+    </table>
+}
+
+
+<a class="btn btn-primary" href="/book">Return to all books</a>

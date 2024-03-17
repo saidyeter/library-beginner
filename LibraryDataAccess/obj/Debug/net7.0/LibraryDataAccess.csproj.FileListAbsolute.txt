@@ -1,0 +1,12 @@
+/home/said/RiderProjects/Library/LibraryDataAccess/bin/Debug/net7.0/LibraryDataAccess.deps.json
+/home/said/RiderProjects/Library/LibraryDataAccess/bin/Debug/net7.0/LibraryDataAccess.dll
+/home/said/RiderProjects/Library/LibraryDataAccess/bin/Debug/net7.0/LibraryDataAccess.pdb
+/home/said/RiderProjects/Library/LibraryDataAccess/obj/Debug/net7.0/LibraryDataAccess.csproj.AssemblyReference.cache
+/home/said/RiderProjects/Library/LibraryDataAccess/obj/Debug/net7.0/LibraryDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/home/said/RiderProjects/Library/LibraryDataAccess/obj/Debug/net7.0/LibraryDataAccess.AssemblyInfoInputs.cache
+/home/said/RiderProjects/Library/LibraryDataAccess/obj/Debug/net7.0/LibraryDataAccess.AssemblyInfo.cs
+/home/said/RiderProjects/Library/LibraryDataAccess/obj/Debug/net7.0/LibraryDataAccess.csproj.CoreCompileInputs.cache
+/home/said/RiderProjects/Library/LibraryDataAccess/obj/Debug/net7.0/LibraryDataAccess.dll
+/home/said/RiderProjects/Library/LibraryDataAccess/obj/Debug/net7.0/refint/LibraryDataAccess.dll
+/home/said/RiderProjects/Library/LibraryDataAccess/obj/Debug/net7.0/LibraryDataAccess.pdb
+/home/said/RiderProjects/Library/LibraryDataAccess/obj/Debug/net7.0/ref/LibraryDataAccess.dll

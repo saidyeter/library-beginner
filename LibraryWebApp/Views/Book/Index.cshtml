@@ -1,0 +1,36 @@
+@model LibraryWebApp.Models.BookViewModel[]
+
+@{
+    ViewBag.Title = "My books";
+    Layout = "_Layout";
+}
+
+<h2>Books</h2>
+
+<a class="btn btn-outline-primary" href="/book/create">Add New Book</a>
+<table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">AuthorName</th>
+        <th scope="col">PublishYear</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    @foreach (var book in Model)
+    {
+        <tr>
+            <th scope="row">
+                <a href="/book/single/@book.Id">@book.Id</a>
+            </th>
+            <td>@book.Name</td>
+            <td>
+                <a href="/Author/@book.AuthorId">@book.AuthorName</a>
+            </td>
+            <td>@book.ReleaseDate</td>
+        </tr>
+    }
+    </tbody>
+</table>
